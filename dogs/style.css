@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+    font-family: Helvetica, sans-serif;
+   
+    text-align: center;
+    font-size: 50;
+  }
+nav{
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: monospace;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+
+li{
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:620px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Navbar css ends here */
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75vw;
+   
+    margin:30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure{
+    width: 200px;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(104,104,104);
+    transition: 100ms;
+}
+
+figure:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+figure img{
+    height: 250px;
+    width: 200px;;
+}
+
+figcaption button{
+    padding: 10px 20px;
+    margin:10px;
+    font-size: 16px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background:none;
+}
+
+figcaption button:hover{
+    background-color: #ccc;
+    color:white;
+    cursor: pointer;
+    
+}
+
+figcaption p{
+    font-weight: 100;
+}
+form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+table{
+    border:1px solid black;
+    height:300px;
+    padding:1px;
+    width:auto;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(104,104,104);
+    transition: 100ms;
+}
+table:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+
+}
+textarea{
+    height:250px;
+}
+footer{
+    display: block;
+    align-items: center;
+    justify-content:center;
+    background-color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+textarea:focus,input:focus
+{
+    background-color: yellow;
+    
+}
+input[type=submit]:hover
+{
+    transform: scale(1.01);
+    cursor:pointer;
+    background-color: lightgreen;
+
+}
+
+
+
+
+
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+    
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+  .slide-wrapper {
+    width: calc(728px * 4);
+    animation: slide 10s ease infinite;
+  }
+    
+  @keyframes slide {
+    
+    0% {
+      margin-left: 0px;
+    }
+    
+    40% {
+      margin-left: calc(-728px * 1);
+    }
+    
+    60% {
+      margin-left: calc(-728px * 2);
+    }
+    
+    80% {
+      margin-left: calc(-728px * 3);
+    }
+  }
+
+article{
+    color:grey;   
+    font-size:2rem; 
+}
